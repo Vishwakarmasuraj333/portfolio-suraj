@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Vishwakarmasuraj333</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+    <style>
+        body {
+            font-family: "Poppins", sans-serif;
+        }
+
+        .typewriter span {
+            display: inline-block;
+            overflow: hidden;
+            white-space: nowrap;
+            border-right: 2px solid #d34564;
+            animation: typing 3s steps(40, end), blink 0.75s step-end infinite;
+        }
+
+        @keyframes typing {
+            0% {
+                width: 0;
+            }
+
+            50% {
+                width: 100%;
+            }
+
+            100% {
+                width: 0;
+            }
+        }
+
+        @keyframes blink {
+
+            0%,
+            100% {
+                border-color: transparent;
+            }
+
+            50% {
+                border-color: rgb(39, 172, 199);
+            }
+        }
+
+        .card-3d {
+            perspective: 1000px;
+
+        }
+
+        .card-inner {
+            transition: transform 0.6s;
+            transform-style: preserve-3d;
+        }
+
+        .card-3d:hover .card-inner {
+            transform: rotateY(10deg) rotateX(5deg);
+        }
+
+        .animated-card {
+            transition: transform 0.5s ease, box-shadow 0.5s ease;
+            transform-style: preserve-3d;
+            perspective: 1000px;
+        }
+
+        .animated-card:hover {
+            transform: rotateY(8deg) rotateX(4deg) scale(1.0);
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+        }
+
+        .card-inner {
+            transform: translateZ(40px);
+        }
+
+        @keyframes fade-in {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .animate-fade-in {
+            animation: fade-in 0.8s ease-out;
+        }
+
+        /* Background animation */
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
+            z-index: -2;
+        }
+
+        body::after {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('https://www.transparenttextures.com/patterns/stardust.png');
+            opacity: 0.2;
+            animation: animateStars 100s linear infinite;
+            z-index: -1;
+        }
+
+        @keyframes animateStars {
+            0% {
+                background-position: 0 0;
+            }
+
+            100% {
+                background-position: 10000px 5000px;
+            }
+        }
+    </style>
+</head>
+
+<body class="bg-[#070717] text-white min-h-screen">
+    <header class="flex items-center justify-between px-6 py-4 max-w-6xl mx-auto">
+        <a class="flex items-center space-x-1 text-white text-lg font-semibold select-none" href="#">
+            <span class="text-purple-600"><i class="fas fa-angle-left"></i></span>
+            <span class="text-purple-600"><b>Vishwakarma</b></span>
+            <span class="text-yellow-400">/Suraj</span>
+            <span class="text-red-600"><i class="fas fa-angle-right"></i></span>
+        </a>
+        <nav class="hidden md:flex space-x-6 font-semibold text-sm">
+            <a class="text-pink-400 hover:text-red-500 tetransition" href="#">About</a>
+            <a class="text-yellow-400 hover:text-purple-500 transition" href="#">Skills</a>
+            <a class="text-green-400 hover:text-blue-500 transition" href="#">Experience</a>
+            <a class="text-blue-400 hover:text-purple-500 transition" href="#">Projects</a>
+            <a class="text-purple-400 hover:text-red-500 transition" href="#">Education</a>
+        </nav>
+
+        <a class="bg-purple-600 hover:bg-purple-700 transition rounded-full px-6 py-2 text-white font-semibold text-sm"
+            href="https://github.com/Vishwakarmasuraj333" target="_blank">
+            Github Profile
+        </a>
+    </header>
+    <main class="max-w-6xl mx-auto px-6 flex flex-col md:flex-row items-center md:items-start gap-12 py-16">
+        <section class="flex-1 max-w-xl">
+            <h1 class="text-pink-600 text-4xl md:text-5xl font-extrabold leading-tight mb-4 text-gray-200 ">
+                Hi, I am
+                <br />
+                Vishwakarma Suraj,
+            </h1>
+            <h2 class="text-yellow-600 text-xl md:text-2xl font-semibold mb-4 text-gray-300 typewriter">
+                And I'm a
+                <br> <span id="typewriter-text">Fullstack Developer</span>
+            </h2>
+            <p class="text-gray-400 text-base md:text-lg leading-relaxed mb-8">
+                I'm Suraj Vishwakarma, a passionate Full-Stack Developer with a B.Sc. in IT. I specialize in MERN stack:
+                JavaScript, React, Node.js, Express, MongoDB & MySQL. I love solving real-world problems with clean and
+                scalable code.
+            </p>
+
+            <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+
+
+            <div class="flex space-x-4 justify-start items-start mt-10">
+
+                <a href="https://www.instagram.com/surajvishwakarma_bittu?igsh=NXlyNHBrbjNvbGJ0&utm_source=ig_contact_invite"
+                    target="_blank" class="text-pink-600 text-2xl hover:text-pink-500 transition duration-300">
+                    <i class="fab fa-instagram"></i>
+                </a>
+
+
+                <a href="https://www.facebook.com/share/16a5Gdy654/" target="_blank"
+                    class="text-green-600 text-2xl hover:text-blue-500 transition duration-300">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+
+
+                <a href="https://wa.me/your-number" target="_blank"
+                    class="text-yellow-600 text-2xl hover:text-blue-500 transition duration-300">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+
+                <a href="https://github.com/Vishwakarmasuraj333" target="_blank"
+                    class="text-red-600 text-2xl hover:text-red-500 transition duration-300">
+                    <i class="fab fa-github"></i>
+                </a>
+
+                <a href="https://twitter.com" target="_blank"
+                    class="text-blue-600 text-2xl hover: text-blue-500 transition duration-300">
+                    <i class="fab fa-twitter"></i>
+                </a>
+            </div><br>
+
+            <a class="inline-block px-10 py-4 text-white font-bold text-lg rounded-full 
+    bg-gradient-to-r from-yellow-600 to-red-400 
+    hover:from-sky-700 hover:to-purple-500 
+    transition duration-300 shadow-lg hover:shadow-purple-500/50 
+    transform hover:scale-105" href="c:\Users\DK\Downloads\resume.jpeg" target="_blank">
+                📄 Check Resume
+            </a>
+
+            <a class="inline-block bg-gradient-to-r from-yellow-600 to-red-400 hover:from-sky-700 hover:to-purple-500 transition text-white font-bold text-lg rounded-full px-10 py-4"
+                href="#">
+                hire Me
+            </a>
+        </section>
+
+
+        <section class="flex-1 flex justify-center md:justify-end">
+            <div class="relative rounded-full border border-purple-600 p-1 hover:scale-105 duration-300">
+                <img alt="suraj" class="rounded-full w-72 h-72 object-cover animate-pulse"
+                    src="c:\Users\DK\Downloads\WhatsApp Image 2025-05-28 at 4.49.37 PM.jpeg" />
+            </div>
+
+        </section>
+    </main>
+    <h1
+        class="text-4xl sm:text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 via-pink-500 to-red-500 mb-12 text-center hover:scale-105 animate-pulse">
+        My Fullstack Skills
+    </h1>
+
+    <div
+        class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 w-full max-w-6xl text-center container mx-auto px-4 text-center ">
+        <div
+            class="card-3d bg-gradient-to-br from-purple-700 to-purple-900 rounded-2xl p-6 shadow-2xl hover:shadow-purple-500/50 transform transition duration-500">
+            <div class="card-inner rounded-2xl">
+                <h2 class="text-xl font-bold mb-4">Frontend</h2>
+                <ul class="space-y-2 text-sm text-gray-200">
+                    <li>⚡ HTML, CSS, JavaScript</li>
+                    <li>⚛️ React.js, Next.js</li>
+                    <li>🎨 Tailwind CSS, Sass</li>
+                    <li>📦 Redux, Context API</li>
+                    <li>🧪 Jest, React Testing Library</li>
+                </ul>
+            </div>
+        </div>
+
+        <div
+            class="card-3d bg-gradient-to-br from-blue-700 to-blue-900 rounded-2xl p-6 shadow-2xl hover:shadow-blue-500/50 transform transition duration-500">
+            <div class="card-inner rounded-2xl">
+                <h2 class="text-xl font-bold mb-4">Backend</h2>
+                <ul class="space-y-2 text-sm text-gray-200">
+                    <li>🧠 Node.js, Express.js</li>
+                    <li>🗃️ MongoDB, PostgreSQL</li>
+                    <li>🔐 JWT, OAuth</li>
+                    <li>📡 REST APIs, GraphQL</li>
+                    <li>🧪 Mocha, Chai</li>
+                </ul>
+            </div>
+        </div>
+        <div
+            class="card-3d bg-gradient-to-br from-pink-600 to-red-700 rounded-2xl p-6 shadow-2xl hover:shadow-pink-500/40 transform transition duration-500">
+            <div class="card-inner rounded-2xl">
+                <h2 class="text-xl font-bold mb-4">Fullstack</h2>
+                <ul class="space-y-2 text-sm text-gray-200">
+                    <li>🔁 MERN Stack (Mongo, Express, React, Node)</li>
+                    <li>🔧 API Integration & Auth</li>
+                    <li>⚙️ DevOps Basics: GitHub, Netlify, Vercel</li>
+                    <li>📊 Admin Dashboards & CMS</li>
+                    <li>🚀 Optimization & Deployment</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    </div><br><br>
+
+
+    <section class="py-12 bg-dark">
+        <div class="container mx-auto px-4 text-center text-blue-600">
+            <h2 class="text-3xl font-bold mb-6 hover scale-105 animate-pulse ">Fullstack Developer Skills</h2>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+                <div class="bg-blue-100 p-4 rounded shadow hover:scale-105 transition">
+                    <p class="font-semibold">HTML & CSS</p>
+                </div>
+                <div class="bg-green-700 text-gray-700 p-4 rounded shadow hover:scale-105 transition">
+                    <p class="font-semibold">JavaScript</p>
+                </div>
+                <div class="bg-yellow-500 text-green-600 p-4 rounded shadow hover:scale-105 transition">
+                    <p class="font-semibold">React.js</p>
+                </div>
+                <div class="bg-purple-800 text-pink-500 p-4 rounded shadow hover:scale-105 transition">
+                    <p class="font-semibold">Node.js</p>
+                </div>
+                <div class="bg-red-600 p-4 text-purple-500 shadow hover:scale-105 transition">
+                    <p class="font-semibold">MongoDB</p>
+                </div>
+                <div class="bg-indigo-400 text-red-800 p-4 rounded shadow hover:scale-105 transition">
+                    <p class="font-semibold">Express.js</p>
+                </div>
+                <div class="bg-pink-800 p-4 text-yellow-600 rounded shadow hover:scale-105 transition">
+                    <p class="font-semibold">Tailwind CSS</p>
+                </div>
+                <div class="bg-gray-800 p-4 rounded shadow hover:scale-105 transition">
+                    <p class="font-semibold">Git & GitHub</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div
+        class="animated-card bg-gradient-to-br from-gray-800 via-gray-900 to-black text-white rounded-2xl overflow-hidden shadow-xl max-w-sm w-full p-6 hover:shadow-purple-600/40 mx-auto px-4 text-center ">
+        <div class="overflow-hidden rounded-xl mb-4">
+            <img src="c:\Users\DK\Downloads\m.jpeg" alt="Suraj"
+                class="w-full h-48 object-cover rounded-xl transform hover:scale-105 transition duration-700 ease-in-out" />
+        </div>
+        <div class="card-inner">
+            <h2 class="text-2xl font-bold mb-2 text-purple-400">I'm Suraj</h2>
+            <p class="text-gray-300 text-sm leading-relaxed">
+                Passionate <span class="text-purple-400 font-semibold">Fullstack Developer</span> skilled in MERN Stack,
+                DevOps basics & modern UI/UX. I craft dynamic, responsive, and elegant web applications with performance
+                in mind.
+            </p>
+        </div>
+    </div>
+
+    <div
+        class="mt-12 backdrop-blur-xl bg-white/10 border border-white/20 rounded-2xl shadow-xl max-w-md w-full p-6 mx-auto text-white animate-fade-in transform transition duration-700 hover:scale-105">
+        <h2 class="text-2xl font-bold text-purple-300 mb-4 text-center">About & Contact</h2>
+
+
+        <p class="text-sm text-gray-300 mb-6 text-center">
+            I'm Suraj, a Fullstack Developer who loves building interactive UIs and robust APIs. Let’s connect!
+        </p>
+
+
+        <form class="space-y-4">
+
+            <div>
+                <label class="block text-sm text-gray-400 mb-1" for="name">Name</label>
+                <input id="name" type="text" placeholder="Your name"
+                    class="w-full px-4 py-2 rounded-lg bg-white/10 border border-white/20 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-purple-500 text-white" />
+            </div>
+
+            <div>
+                <label class="block text-sm text-gray-400 mb-1" for="email">Email</label>
+                <input id="email" type="email" placeholder="you@example.com"
+                    class="w-full px-4 py-2 rounded-lg bg-white/10 border border-white/20 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-purple-500 text-white" />
+            </div>
+
+
+            <div>
+                <label class="block text-sm text-gray-400 mb-1" for="message">Message</label>
+                <textarea id="message" rows="3" placeholder="Say hello!"
+                    class="w-full px-4 py-2 rounded-lg bg-white/10 border border-white/20 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-purple-500 text-white"></textarea>
+            </div>
+
+            <div class="text-center">
+                <button type="submit"
+                    class="mt-2 px-6 py-2 bg-purple-600 hover:bg-purple-700 rounded-lg shadow-lg transition duration-300"
+                    href="gotohome">
+                    Send Message
+                </button>
+            </div>
+        </form>
+    </div>
+    <div class="text-center mb-10 mt-10">
+        <h1 class="text-3xl sm:text-4xl font-extrabold text-purple-300 tracking-wide mb-2">
+            🚀 Web Development & Software Engineering Concepts
+        </h1>
+        <p class="text-gray-400 text-sm sm:text-base max-w-xl mx-auto">
+            Explore essential topics in frontend, backend, programming, and deployment that every modern developer
+            should know.
+        </p>
+    </div>
+
+    <div class="flex flex-wrap justify-center gap-6 mt-10 p-4">
+
+        <div
+            class="backdrop-blur-xl bg-white/10 border border-white/20 rounded-2xl shadow-xl max-w-sm w-full p-6 text-white transition duration-500 hover:scale-105">
+            <img src="https://images.pexels.com/photos/1181248/pexels-photo-1181248.jpeg" alt="Frontend"
+                class="rounded-xl mb-4 w-full h-40 object-cover">
+            <h2 class="text-xl font-bold text-purple-300 mb-2">Frontend Development</h2>
+            <p class="text-sm text-gray-300 mb-3">Build beautiful and interactive interfaces using HTML, CSS,
+                JavaScript, and frameworks like React or Vue.</p>
+            <a href="https://images.pexels.com/photos/1181248/pexels-photo-1181248.jpeg" download
+                class="text-purple-400 hover:underline text-sm">📥
+                Download Image</a>
+        </div>
+        <div
+            class="backdrop-blur-xl bg-white/10 border border-white/20 rounded-2xl shadow-xl max-w-sm w-full p-6 text-white transition duration-500 hover:scale-105">
+            <img src="https://images.unsplash.com/photo-1532522750741-628fde798c73?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mjh8fHNvZnR3YXJlfGVufDB8fDB8fHww"
+                alt="Backend" class="rounded-xl mb-4 w-full h-40 object-cover">
+            <h2 class="text-xl font-bold text-purple-300 mb-2">Backend Development</h2>
+            <p class="text-sm text-gray-300 mb-3">Handle data, security, and APIs using Node.js, Python,
+                databases, and scalable server-side architectures.</p>
+            <a href="https://images.unsplash.com/photo-1532522750741-628fde798c73?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mjh8fHNvZnR3YXJlfGVufDB8fDB8fHww"
+                download class="text-purple-400 hover:underline text-sm">📥
+                Download Image</a>
+        </div>
+        <div
+            class="backdrop-blur-xl bg-white/10 border border-white/20 rounded-2xl shadow-xl max-w-sm w-full p-6 text-white transition duration-500 hover:scale-105">
+            <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fHNvZnR3YXJlfGVufDB8fDB8fHww"
+                alt="Fullstack" class="rounded-xl mb-4 w-full h-40 object-cover">
+            <h2 class="text-xl font-bold text-purple-300 mb-2">Fullstack Engineering</h2>
+            <p class="text-sm text-gray-300 mb-3">Combine frontend and backend skills to build complete
+                applications from UI to database logic.</p>
+            <a href="https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fHNvZnR3YXJlfGVufDB8fDB8fHww"
+                download class="text-purple-400 hover:underline text-sm">📥
+                Download Image</a>
+        </div>
+        <div
+            class="backdrop-blur-xl bg-white/10 border border-white/20 rounded-2xl shadow-xl max-w-sm w-full p-6 text-white transition duration-500 hover:scale-105">
+            <img src="https://images.unsplash.com/photo-1583508915901-b5f84c1dcde1?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fHNvZnR3YXJlfGVufDB8fDB8fHww"
+                alt="Software Engineering" class="rounded-xl mb-4 w-full h-40 object-cover">
+            <h2 class="text-xl font-bold text-purple-300 mb-2">Software Engineering</h2>
+            <p class="text-sm text-gray-300 mb-3">Design, develop, test, and maintain software systems using
+                structured engineering principles and patterns.</p>
+            <a href="https://images.unsplash.com/photo-1583508915901-b5f84c1dcde1?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fHNvZnR3YXJlfGVufDB8fDB8fHww"
+                download class="text-purple-400 hover:underline text-sm">📥
+                Download Image</a>
+        </div>
+        <div
+            class="backdrop-blur-xl bg-white/10 border border-white/20 rounded-2xl shadow-xl max-w-sm w-full p-6 text-white transition duration-500 hover:scale-105">
+            <img src="https://images.pexels.com/photos/1181244/pexels-photo-1181244.jpeg" alt="Programming"
+                class="rounded-xl mb-4 w-full h-40 object-cover">
+            <h2 class="text-xl font-bold text-purple-300 mb-2">Programming Basics</h2>
+            <p class="text-sm text-gray-300 mb-3">Understand data structures, algorithms, logic, and
+                problem-solving techniques to write clean and efficient code.</p>
+            <a href="https://images.pexels.com/photos/1181244/pexels-photo-1181244.jpeg" download
+                class="text-purple-400 hover:underline text-sm">📥
+                Download Image</a>
+        </div>
+        <div
+            class="backdrop-blur-xl bg-white/10 border border-white/20 rounded-2xl shadow-xl max-w-sm w-full p-6 text-white transition duration-500 hover:scale-105">
+            <img src="https://plus.unsplash.com/premium_photo-1689700527718-257b67a4abd0?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjV8fHNvZnR3YXJlfGVufDB8fDB8fHww"
+                alt="DevOps" class="rounded-xl mb-4 w-full h-40 object-cover">
+            <h2 class="text-xl font-bold text-purple-300 mb-2">DevOps & Deployment</h2>
+            <p class="text-sm text-gray-300 mb-3">Use tools like Docker, GitHub, and CI/CD pipelines to deploy
+                and manage scalable software in the cloud.</p>
+            <a href="https://plus.unsplash.com/premium_photo-1689700527718-257b67a4abd0?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjV8fHNvZnR3YXJlfGVufDB8fDB8fHww"
+                download class="text-purple-400 hover:underline text-sm">📥
+                Download Image</a>
+        </div>
+
+    </div>
+
+
+    </div>
+
+    <footer class="bg-purple-900 text-blue-600 py-8 mt-16">
+        <div
+            class="max-w-7xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center space-y-6 md:space-y-0">
+
+            <p class="text-sm text-gray-400">&copy; 2025 Suraj | Fullstack Developer</p>
+
+            <div class="flex space-x-6 text-xl">
+
+                <a href="https://www.tiktok.com/@yourusername" target="_blank"
+                    class="transform transition duration-300 hover:scale-125 hover:text-pink-500">
+                    <i class="fab fa-tiktok"></i>
+                </a>
+
+
+                <a href="https://t.me/surajvishwakarm333" target="_blank"
+                    class="transform transition duration-300 hover:scale-125 hover:text-blue-400">
+                    <i class="fab fa-telegram-plane"></i>
+                </a>
+
+
+                <a href="https://github.com/Vishwakarmasuraj333" target="_blank"
+                    class="transform transition duration-300 hover:scale-125 hover:text-gray-300">
+                    <i class="fab fa-github"></i>
+                </a>
+
+
+                <a href="https://vishwakarmasuraj333.github.io/surajvishwakarm333/#" target="_blank"
+                    class="transform transition duration-300 hover:scale-125 hover:text-yellow-400">
+                    <i class="fas fa-globe"></i>
+                </a>
+
+
+                <a href="mailto:your@email.com"
+                    class="transform transition duration-300 hover:scale-125 hover:text-green-400">
+                    <i class="fas fa-envelope"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <script>
+
+        const roles = [
+            { text: "Fullstack Developer", color: "text-purple-500" },
+            { text: "Software Engineer", color: "text-sky-400" },
+            { text: "MERN Stack Developer", color: "text-yellow-400" },
+            { text: "Tech Enthusiast", color: "text-green-400" }
+        ];
+
+        let index = 0;
+        const textSpan = document.getElementById("typewriter-text");
+
+        function rotateText() {
+            const { text, color } = roles[index];
+            textSpan.className = `font-bold ${color}`;
+            textSpan.textContent = text;
+            index = (index + 1) % roles.length;
+        }
+
+        rotateText(); // initial load
+        setInterval(rotateText, 3000); // every 3 sec
+
+        // Wait until DOM is loaded
+        document.addEventListener("DOMContentLoaded", () => {
+            const form = document.querySelector("form");
+
+            form.addEventListener("submit", function (e) {
+                e.preventDefault(); // prevent real form submission
+
+                // Collect form data
+                const name = document.getElementById("name").value.trim();
+                const email = document.getElementById("email").value.trim();
+                const message = document.getElementById("message").value.trim();
+
+                // Basic validation
+                if (!name || !email || !message) {
+                    alert("❗ Please fill out all fields.");
+                    return;
+                }
+
+                // Simulate message received
+                alert(`✅ Message received!\n\nThank you, ${name}.\nWe'll reach you at ${email}.`);
+
+                // Optional: Clear form
+                form.reset();
+            });
+        });
+
+        const canvas = document.getElementById("bgCanvas");
+        const ctx = canvas.getContext("2d");
+        canvas.width = window.innerWidth;
+        canvas.height = window.innerHeight;
+
+        const particlesArray = [];
+
+        class Particle {
+            constructor() {
+                this.x = Math.random() * canvas.width;
+                this.y = Math.random() * canvas.height;
+                this.size = Math.random() * 2;
+                this.speedX = Math.random() * 0.5 - 0.25;
+                this.speedY = Math.random() * 0.5 - 0.25;
+            }
+
+            update() {
+                this.x += this.speedX;
+                this.y += this.speedY;
+                if (this.x > canvas.width) this.x = 0;
+                if (this.y > canvas.height) this.y = 0;
+            }
+
+            draw() {
+                ctx.fillStyle = "rgba(255, 255, 255, 0.7)";
+                ctx.beginPath();
+                ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
+                ctx.fill();
+            }
+        }
+
+        function initParticles(num) {
+            for (let i = 0; i < num; i++) {
+                particlesArray.push(new Particle());
+            }
+        }
+        function animate() {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            particlesArray.forEach(p => {
+                p.update();
+                p.draw();
+            });
+            requestAnimationFrame(animate);
+        }
+
+        initParticles(150);
+        animate();
+        window.addEventListener('resize', () => {
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight;
+        });
+    </script>
+
+
+</body>
+
+</html>
