@@ -20,7 +20,11 @@
 
 ## 📸 Preview
 
-![Preview Screenshot](https://user-images.githubusercontent.com/your-username/your-image.png)
+![Preview Screenshot](![Screenshot_2025-05-30-09-28-29-356_com android chrome](
+![Uploading Screenshot_2025-05-30-09-28-25-048_com.android.chrome.jpg…]()
+
+)
+ )
 
 ## 🔗 Live Site
 
