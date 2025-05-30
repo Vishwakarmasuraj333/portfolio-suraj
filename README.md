@@ -20,7 +20,14 @@
 
 ## 📸 Preview
 
-![Preview Screenshot] ![Preview](https://view.png,(https://view2.png))
+![Preview Screenshot] 
+## 💻 Project Preview
+
+![Portfolio Preview](https://view.png)
+## 💻 Project Preview
+
+![Portfolio Preview](https://view2.png)
+
 
 ## 🔗 Live Site
 
