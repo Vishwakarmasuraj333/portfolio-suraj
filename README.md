@@ -24,7 +24,7 @@
 
 ## 🔗 Live Site
 
-[👉 Click to Visit](https://Vishwakarmasuraj333.github.io/portfolio-suraj/)
+[👉 Click to Visit](https://vishwakarmasuraj333.github.io/portfolio-suraj/#)
 
 ## 📫 Connect with Me
 
